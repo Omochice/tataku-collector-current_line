@@ -14,8 +14,8 @@ DEPENDENCIES			*tataku-collector-current_line-dependencies*
 
 This plugin needs below:
 
-* [vim-denops]()
-* [tataku.vim]()
+* [denops.vim](https://github.com/vim-denops/denops.vim)
+* [tataku.vim](https://github.com/Omochice/tataku.vim)
 
 ==============================================================================
 OPTIONS				*tataku-collector-current_line-options*
