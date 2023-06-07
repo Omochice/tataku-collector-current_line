@@ -1,12 +1,12 @@
 import { Denops } from "https://deno.land/x/denops_std@v5.0.0/mod.ts";
 import * as fn from "https://deno.land/x/denops_std@v5.0.0/function/mod.ts";
-import { Collector } from "https://raw.githubusercontent.com/Omochice/tataku.vim/master/denops/tataku/interface.ts";
 
-export default class implements Collector {
-  constructor(_option: Record<string, unknown>) {
-  }
+const collector = (denops: Denops, _option: unknown) => {
+  return new ReadableStream<string[]>({
+    start: async (controller: ReadableStreamDefaultController<string[]>) => {
+      controller.enqueue([await fn.getline(denops, ".")]);
+    },
+  });
+};
 
-  async run(denops: Denops) {
-    return [await fn.getline(denops, ".")];
-  }
-}
+export default collector;
