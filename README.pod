@@ -19,6 +19,8 @@ The tataku.vim module that collect from current line.
 
 =item * L<Samples|tataku-collector-current_line-processor-ollama-samples>
 
+=item * L<License|tataku-collector-current_line-license>
+
 =back
 
 =head2 Dependencies X<tataku-collector-current_line-dependencies>
@@ -48,5 +50,10 @@ let g:tataku_recipes = {
   ...
   }
 }
+
+
+=head2 License X<tataku-collector-current_line-license>
+
+L<MIT|https://github.com/Omochice/tataku-collector-current_line/blob/main/LICENSE>
 
 =end vim
