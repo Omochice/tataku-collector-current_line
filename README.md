@@ -1,40 +1,32 @@
-# tataku-collector-current_line
+# tataku-collector-current_line 
 
-The [tataku.vim](https://github.com/Omochice/tataku.vim) module that collect from current line.
+The tataku.vim module that collect from current line.
 
+## Contents 
 
-## Installation
+- [Dependencies](tataku-collector-current_line-dependencies)
+- [Options](tataku-collector-current_line-introduction)
+- [Samples](tataku-collector-current_line-processor-ollama-samples)
 
-Use your favorite plugin manager.
+## Dependencies 
 
-- [vim-plug](https://github.com/junegunn/vim-plug)
-    ```vim
-    Plug 'Omochice/tataku-collector-current_line'
-    ```
-- [dein.vim](https://github.com/Shougo/dein.vim)
-    ```vim
-    call dein#add('Omochice/tataku-collector-current_line')
-    ```
-- [vim-jetpack](https://github.com/tani/vim-jetpack)
-    ```vim
-    Jetpack 'Omochice/tataku-collector-current_line'
-    ```
+This plugin needs:
 
-## Options
+- [vim-denops/denops.vim](https://github.com/vim-denops/denops.vim)
+- [Omochice/tataku.vim](https://github.com/Omochice/tataku.vim)
+
+## Options 
 
 This module provides no options.
 
-
-## Samples
+## Samples 
 
 ```vim
 let g:tataku_recipes = {
-	\ 'sample': {
-		\ 'collector': {'name': 'current_line', 'options': {}},
-		...
+  \ 'sample': {
+  \ 'collector': {'name': 'current_line', 'options': {}},
+  ...
+  }
+}
 ```
 
-
-## License
-
-[MIT License](./LICENSE)
