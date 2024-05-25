@@ -17,7 +17,7 @@ The tataku.vim module that collect from current line.
 
 =item * L<Options|tataku-collector-current_line-introduction>
 
-=item * L<Samples|tataku-collector-current_line-processor-ollama-samples>
+=item * L<Samples|tataku-collector-current_line-samples>
 
 =item * L<License|tataku-collector-current_line-license>
 
