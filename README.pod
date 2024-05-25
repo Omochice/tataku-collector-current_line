@@ -1,0 +1,52 @@
+---
+name: tataku-collector-current_line
+description: The tataku.vim collector module
+---
+
+=pod
+
+=head1 tataku-collector-current_line X<tataku-collector-current_line>
+
+The tataku.vim module that collect from current line.
+
+=head2 Contents X<tataku-collector-current_line-contents>
+
+=over 0
+
+=item * L<Dependencies|tataku-collector-current_line-dependencies>
+
+=item * L<Options|tataku-collector-current_line-introduction>
+
+=item * L<Samples|tataku-collector-current_line-processor-ollama-samples>
+
+=back
+
+=head2 Dependencies X<tataku-collector-current_line-dependencies>
+
+This plugin needs:
+
+=over 0
+
+=item * L<vim-denops/denops.vim|https://github.com/vim-denops/denops.vim>
+
+=item * L<Omochice/tataku.vim|https://github.com/Omochice/tataku.vim>
+
+=back
+
+=head2 Options X<tataku-collector-current_line-options>
+
+This module provides no options.
+
+
+=head2 Samples X<tataku-collector-current_line-samples>
+
+=begin vim
+
+let g:tataku_recipes = {
+  \ 'sample': {
+  \ 'collector': {'name': 'current_line', 'options': {}},
+  ...
+  }
+}
+
+=end vim
