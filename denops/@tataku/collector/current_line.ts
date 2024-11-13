@@ -1,5 +1,5 @@
-import { Denops } from "jsr:@denops/std@7.3.1";
-import * as fn from "jsr:@denops/std@7.3.1/function";
+import { Denops } from "jsr:@denops/std@7.3.2";
+import * as fn from "jsr:@denops/std@7.3.2/function";
 
 const collector = (denops: Denops, _option: unknown) => {
   return new ReadableStream<string[]>({
