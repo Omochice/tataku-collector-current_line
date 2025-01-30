@@ -6,6 +6,7 @@ const collector: CollectorFactory = (denops: Denops) => {
   return new ReadableStream<string[]>({
     start: async (controller: ReadableStreamDefaultController<string[]>) => {
       controller.enqueue([await fn.getline(denops, ".")]);
+      controller.close();
     },
   });
 };
